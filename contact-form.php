@@ -1,10 +1,9 @@
 <?php
-<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['mail']);
+    $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
-    $phone = htmlspecialchars($_POST['phone']);
+    $phone = htmlspecialchars($_POST['contact']);
 
     $to = "hrmgalaxi@gmail.com";
     $subject = "New Quotation Request from $name";
