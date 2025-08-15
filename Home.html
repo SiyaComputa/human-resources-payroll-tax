@@ -2,61 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Galaxy Consulting</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>HRM Galaxy Consulting</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://formspree.io/f/xyzpoqlw"/>
   </head>
   <body>
     <div class="background-overlay">
-      <img src="images/background.jpg" alt="Background Image" />
+      <img src="images/background.png" alt="Background Image" />
     </div>
     <header class="home-header-left">
       <div class="logo">
         <img src="images/logo.jpg" alt="Company Logo" />
       </div>
-      <h1 class="company-name">Galaxy Consulting (pty)ltd</h1>
+      <h1 class="company-name">HRM Galaxy Consulting (Pty)Ltd</h1>
     </header>
+  <div class="welcome-message welcome-align">
+  <header>
+    <h1>
+      <strong>Need Assistance with Your HR, Payroll & Tax matters?</strong>
+      <br />
+      Let us take care of your trouble
+    </h1>
+  </header>
+  <p>
+    Welcome to HRM Galaxy Consulting. Discover the range of professional
+    services we offer and feel free to contact us anytime.
+  </p>
+</div>
+    <nav class="sidebar">
+      <ul>
+        <li>
+          <button onclick="location.href='about.html'">About Us</button>
+        </li>
+        <li>
+          <button onclick="location.href='approach.html'">Our Approach</button>
+        </li>
+        <li>
+          <button onclick="location.href='mission.html'">Our Mission</button>
+        </li>
+        <li>
+          <button onclick="location.href='strategy.html'">Our Strategy</button>
+        </li>
+        <li>
+          <button onclick="location.href='Values.html'">Our Values</button>
+        </li>
+        <li>
+          <button onclick="location.href='management.html'">Management</button>
+        </li>
+      </ul>
+    </nav>
     <main class="main-content home-main-left">
-      <nav class="navbar">
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="approach.html">Our Approach</a></li>
-          <li><a href="mission.html">Our Mission</a></li>
-          <li><a href="management.html">Management</a></li>
-        </ul>
-      </nav>
-      <nav class="sidebar">
-        <ul>
-          <li>
-            <button onclick="location.href='about.html'">About Us</button>
-          </li>
-          <li>
-            <button onclick="location.href='approach.html'">
-              Our Approach
-            </button>
-          </li>
-          <li>
-            <button onclick="location.href='mission.html'">Our Mission</button>
-          </li>
-          <li>
-            <button onclick="location.href='strategy.html'">
-              Our Strategy
-            </button>
-          </li>
-          <li>
-            <button onclick="location.href='Values.html'">Our Values</button>
-          </li>
-          <li>
-            <button onclick="location.href='management.html'">
-              Management
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <div class="section-container">
-        <section class="our-services">
+      <!-- Sidebar navigation is now handled by #sidebar-menu and the toggle button above -->
+
+      <div class="container">
+        <div class="our-services">
           <h2>Our Services</h2>
-          <ul>
+          <p></p><ul>
             <li>OUTSOURCED PAYROLL SERVICES</li>
             <li>INTEGRATED HR & PAYROLL MANAGEMENT SOFTWARE & SUPPORT</li>
             <li>EMPLOYER TAXATION (EMP201,EMP501, VAT201, PROVISIONAL TAX)</li>
@@ -70,12 +71,11 @@
             <li>STRATEGIC COMPLIANCE ADVICE</li>
             <li>AUDIT ASSISTANCE</li>
             <li>CSD ADMINISTRATION</li>
-            <li>ASSIST WITH NEW COMPANY REGISTRATION AND COMPLIANCE ADVICE</li>
-            <li></li>
-          </ul>
-        </section>
+            <li>ASSIST WITH NEW COMPANY REGISTRATION AND COMPLIANCE ADVICE</li>            
+          </p></ul>
+        </div>
 
-        <section class="contacts">
+        <div class="contacts">
           <h3>Contacts</h3>
           <p>
             <b
@@ -90,7 +90,17 @@
             </div>
             <div class="address-row">
               <img class="contact-icon" src="images/call-icon.png" alt="Cell" />
-              <a href="tel:+27696768561">+27 69 676 8561/ +27 65 871 3612</a>
+              <a href="tel:+27 65 8713612">+27 65 8713612 / +27 68 2183279</a>
+            </div>
+            <div class="address-row">
+              <img
+                class="whatsapp-icon"
+                src="images/whatsapp-icon.png"
+                alt="WhatsApp"
+              />
+              <a href="https://wa.me/27658713612" target="_blank"
+                >+27 65 871 3612 / +27 68 2183279</a
+              >
             </div>
             <div class="address-row">
               <img
@@ -98,60 +108,43 @@
                 src="images/location.png"
                 alt="Location"
               />
-              <span>
-                121 Soho Junction, 4 Poplar Avenue, Broadacres, Fourways 2021
-              </span>
+              <span> 4 Poplar Avenue, Broadacres, Fourways 2021 </span>
             </div>
           </address>
           <div class="contacts-office-image">
             <img src="images/office.png" alt="Our Office" />
           </div>
-        </section>
+        </div>
       </div>
       <section class="quote-form">
         <h4>Get a Free Quotation Today</h4>
-        <p>For an obligation-free quote, please provide your contact details</p>
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="_redirect" value="/thank-you.html" />
-          <p style="display: none">
-            <label
-              >Don’t fill this out if you’re human: <input name="bot-field"
-            /></label>
-          </p>
-          <div class="form-group">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Your Phone:</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-          </div>
+        <p>
+          For an obligation-free quote, please provide your contact details.
+        </p>
+        <form action="https://formspree.io/f/xyzpoqlw" method="POST">
+          <label>
+            Your name:
+            <input type="name" name="name" required />
+          </label>
+          <label>
+            Your contact:
+            <input type="contact" name="contact" required />
+          </label>
+          <label>
+            Your email:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
           <button type="submit">Submit</button>
         </form>
       </section>
     </main>
     <footer>
-      <div class="footer-accreditation-container">
-        <span class="footer-accreditation-text">Accredited by SABPP</span>
-        <img
-          class="footer-accreditation"
-          src="images/SABPP-logo.webp"
-          alt="SABPP Logo"
-        />
+      <div class="footer-content">
+        <p>HRM Galaxy Consulting (Pty)Ltd. All rights reserved, &copy; 2023.</p>
       </div>
     </footer>
   </body>
