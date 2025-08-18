@@ -418,7 +418,8 @@ li {
 /* Container to hold the two blocks */
 .container {
   display: flex;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-right: auto;
   gap: 15px; /* Creates the horizontal space between the elements */
 }
 
