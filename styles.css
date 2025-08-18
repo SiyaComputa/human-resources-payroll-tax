@@ -484,50 +484,18 @@ li {
   ==============================================
 */
 footer {
+  margin-top: auto;
   width: 100%;
-  background: #fff;
-  box-shadow: 0 -2px 12px rgba(34, 46, 80, 0.08);
-  text-align: center;
-  position: sticky;
-  bottom: 0;
-  z-index: 1200;
-}
-.footer-content p {
-  font-size: 0.8em;
-  font-weight: 700;
-  color: #232854;
-  text-shadow: 0 1px 8px #fff, 0 0 2px #a259ff;
-  letter-spacing: 0.02em;
-  margin: 0;
-}
-.footer-accreditation-container {
-  max-width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  padding: 12px 20px 8px 20px;
-}
-.footer-accreditation-text {
-  font-size: 1.1rem;
-  color: #222e50;
-  font-weight: bold;
-  background: #fff;
-  padding: 4px 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-.footer-accreditation {
-  height: 44px;
-  vertical-align: middle;
-  margin-left: 8px;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  padding: 2px 8px;
-  transition: transform 0.2s, opacity 0.2s;
+  background: #222e50;
+  color: #d6d8dd;
+  padding: 10px 0;
 }
 
+.footer p {
+  margin-left: 250px;
+  color: #d6d8dd; /* Corrected: Used valid 'color' property */
+  padding: 10px 0;
+}
 /*
   ==============================================
   Responsive Media Queries
