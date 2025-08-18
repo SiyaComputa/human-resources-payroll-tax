@@ -472,6 +472,10 @@ li {
   box-shadow: 0 4px 16px rgba(34, 46, 80, 0.18);
   border: 2px solid mediumpurple;
 }
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .our-services,
+  .contacts {
+    padding: 40px;
 
 /*
   ==============================================
