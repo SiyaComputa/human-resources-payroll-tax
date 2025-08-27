@@ -1,3 +1,8 @@
+/*
+  ==============================================
+  Header
+  ==============================================
+*/
 .home-header-left {
   font-style: oblique;
   display: flex;
@@ -8,8 +13,7 @@
   margin-bottom: 20px;
   /* This creates the correct offset for the 190px sidebar */
   margin-left: 200px;
-  margin-right: auto;
-  width: calc(100% - 240px);
+  width: calc(100% - 220px);
   transition: margin-left 0.3s, width 0.3s;
   border-left: 4px solid mediumpurple;
   box-shadow: -4px 0 8px -4px rgba(0, 0, 0, 0.12);
@@ -18,7 +22,6 @@
   left: 0;
   z-index: 1100;
   box-sizing: border-box;
-  object-position: static;
 }
 
 /* Responsive: On small screens, header takes full width and no left margin */
@@ -98,27 +101,7 @@
   background: mediumpurple;
   color: #f9d342;
 }
-.sidebar-toggle {
-  display: none;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background: #222e50;
-  color: transparent;
-  border: none;
-  font-size: 2rem;
-  z-index: 1100;
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 4px;
-  line-height: 1;
-}
-.sidebar-toggle::before {
-  content: "\2022\2022\2022";
-  display: block;
-  font-size: 2.2rem;
-  letter-spacing: 0.2em;
-}
+
 #sidebar-menu {
   height: 100%;
   width: 250px;
@@ -137,17 +120,6 @@
   font-size: 25px;
   color: #818181;
   display: block;
-}
-#toggle-button {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #333;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  position: fixed;
-  top: 20px;
-  left: 20px;
 }
 
 /*
@@ -172,6 +144,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  padding-bottom: 60px;
 }
 
 .background-overlay {
@@ -206,6 +179,7 @@ body {
   box-shadow: 0 0 0 100vmax rgba(255, 255, 255, 0.1) inset;
   flex: 1;
 }
+
 main,
 .main-content,
 body > p,
@@ -224,27 +198,32 @@ body > h6 {
   max-width: 900px;
   backdrop-filter: blur(1.5px);
 }
+
 section {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  margin-top: 180;
+  margin-top: 180px; /* Corrected: Added 'px' unit */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex: 1;
 }
+
 h2 {
   color: #0056b3;
   margin-bottom: 15px;
   border-bottom: 2px solid;
   padding-bottom: 10px;
 }
+
 ul {
   list-style: none;
   padding: 0;
 }
+
 li {
   margin-bottom: 10px;
 }
+
 .welcome-message {
   font-size: 1.3em;
   font-weight: 700;
@@ -260,22 +239,22 @@ li {
   box-shadow: 0 4px 32px 0 rgba(58, 141, 222, 0.13),
     0 1.5px 8px 0 rgba(249, 212, 35, 0.08);
   border: 1.5px solid #e3f6ff;
-  text-align: 200px;
   letter-spacing: 0.01em;
   text-shadow: 0 2px 12px #e3f6ff, 0 1px 0 #fff, 0 0 12px #6be6c1,
     0 0 2px #f9d423;
   z-index: 10;
 }
+
 .welcome-message.welcome-align {
   overflow: visible;
   position: relative;
   left: 0px;
   top: 0px;
   margin-left: 250px;
-  margin-right: auto; /* Align with sidebar */
-  margin-top: 140px; /* Space below header */
+  margin-right: auto;
+  margin-top: 140px;
   margin-bottom: 24px;
-  max-width: 700px; /* Prevents overflow on the right */
+  max-width: 700px;
   background: linear-gradient(90deg, #f9fafc 0%, #e3f6ff 100%);
   border-radius: 18px;
   padding: 28px 48px;
@@ -294,10 +273,12 @@ li {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 .values-blocks {
   display: flex;
   flex-direction: column;
@@ -305,6 +286,7 @@ li {
   align-items: center;
   margin: 32px 0 24px 0;
 }
+
 .value-block {
   background: rgba(255, 255, 255, 0.92);
   color: #222e50;
@@ -335,22 +317,19 @@ li {
   min-width: 260px;
   float: right;
   clear: both;
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
+
 .quote-form h4 {
   margin-top: 0;
   color: #1a237e;
   font-size: 1.2rem;
   font-weight: 600;
-}
-.quote-form p {
-  color: #444;
-  font-size: 1rem;
-  margin-bottom: 1.2rem;
-}
-.quote-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 .quote-form label {
   display: flex;
@@ -373,15 +352,18 @@ li {
   margin-top: 0.15rem;
   resize: none;
 }
+
 .quote-form textarea {
   min-height: 70px;
   max-width: 100%;
 }
+
 .quote-form input:focus,
 .quote-form textarea:focus {
   border: 1.5px solid #1a237e;
   outline: none;
 }
+
 .quote-form button[type="submit"] {
   background: #1a237e;
   color: #fff;
@@ -397,30 +379,33 @@ li {
 .quote-form button[type="submit"]:hover {
   background: #3949ab;
 }
+
 .contacts-office-image {
   width: 100%;
   margin-top: 18px;
   display: flex;
   justify-content: center;
 }
+
 .contacts-office-image img {
-  max-width: 340px;
   width: 100%;
   border-radius: 14px;
   box-shadow: 0 4px 24px rgba(34, 46, 80, 0.1);
   object-fit: cover;
 }
+
 .contacts h3,
 .quote-form h4 {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
 /* Container to hold the two blocks */
 .container {
   display: flex;
   margin-left: 20px;
   margin-right: auto;
-  gap: 15px; /* Creates the horizontal space between the elements */
+  gap: 15px;
 }
 
 /* Styles for both the our-services and contacts blocks */
@@ -432,28 +417,33 @@ li {
   backdrop-filter: blur(1.5px);
   width: 100%;
 }
+
 .contacts h3,
 .quote-form h4 {
   color: #222e50;
   letter-spacing: 1px;
-  text-decoration: none; /* Removed underline from h3/h4 in these sections */
+  text-decoration: none;
 }
+
 .contacts-address {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 8px;
 }
+
 .address-row {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 1.08em;
 }
+
 .address-label {
   font-weight: bold;
   margin-right: 4px;
 }
+
 .contact-icon,
 .whatsapp-icon {
   height: 38px;
@@ -468,15 +458,19 @@ li {
   box-shadow: 0 2px 8px rgba(34, 46, 80, 0.1);
   transition: box-shadow 0.2s, border 0.2s;
 }
+
 .contact-icon:hover,
 .whatsapp-icon:hover {
   box-shadow: 0 4px 16px rgba(34, 46, 80, 0.18);
   border: 2px solid mediumpurple;
 }
+
 @media screen and (min-width: 600px) and (max-width: 1200px) {
   .our-services,
   .contacts {
     padding: 40px;
+  }
+}
 
 /*
   ==============================================
@@ -496,6 +490,7 @@ footer {
   color: #d6d8dd; /* Corrected: Used valid 'color' property */
   padding: 10px 0;
 }
+
 /*
   ==============================================
   Responsive Media Queries
@@ -511,14 +506,17 @@ footer {
     max-width: 440px;
   }
 }
+
 @media (min-width: 1200px) {
   .sidebar {
     transform: translateX(0);
   }
+
   .sidebar-toggle {
     display: none;
   }
 }
+
 @media (max-width: 600px) {
   .quote-form {
     padding: 0.7rem;
@@ -527,19 +525,23 @@ footer {
     margin: 1rem 0;
   }
 }
+
 @media (max-width: 600px) {
   .sidebar-toggle {
     display: block;
   }
+
   .section-container {
     margin-left: 0;
     background-size: cover;
     background-position: center;
   }
+
   .quote-form {
     max-width: 100%;
     margin: 20px 10px;
   }
+
   header {
     margin-left: 0;
   }
