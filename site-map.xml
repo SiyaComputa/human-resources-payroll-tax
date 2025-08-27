@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Pages -->
+    <url>
+        <loc>https://your-website-domain.com/index.html</loc>
+    </url>
+    <url>
+        <loc>https://your-website-domain.com/Approach.html</loc>
+    </url>
+    <url>
+        <loc>https://your-website-domain.com/Management.html</loc>
+    </url>
+    <url>
+        <loc>https://your-website-domain.com/Mission.html</loc>
+    </url>
+    <url>
+        <loc>https://your-website-domain.com/Strategy.html</loc>
+    </url>
+    <url>
+        <loc>https://your-website-domain.com/thank-you.html</loc>
+    </url>
+
+    <!-- Exclude files that aren't public pages, like CSS or PHP backend files -->
+</urlset>
